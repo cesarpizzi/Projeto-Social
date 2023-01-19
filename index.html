@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Rede Social</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-image: url('imagens/fundo-madeira.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        div#iframe {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+        iframe {
+            position: absolute;
+            top: 79px;
+            left: 21px;
+            width: 269px;
+            height: 473px;
+            backgroundcolor: red;
+        }
+        div#icones {
+            margin-right: 60px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            backgroundcolor: brown;
+        }
+        div#icones img {
+            margin-bottom: 30px;
+            width: 70px;
+            margin-left: auto;
+            display: block;
+            border-radius: 50%;
+        }
+        div#icones img:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.30);
+            border: 1px solid white;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="iframe">
+        <iframe src="home.html" frameborder="0" name="frame"></iframe>
+        <img src="imagens/frame-iphone.png" alt="">
+    </div>
+    <div id="icones">
+        <a href="home.html" target="frame"><img src="imagens/logo-home.jpg" alt=""></a>
+        <a href="facebook.html" target="frame"><img src="imagens/logo-facebook.jpg" alt=""></a>
+        <a href="instagram.html" target="frame"><img src="imagens/logo-instagram.jpg" alt=""></a>
+        <a href="github.html" target="frame"><img src="imagens/logo-github.jpg" alt=""></a>
+        <a href="twitter.html" target="frame"><img src="imagens/logo-twitter.jpg" alt=""></a>
+        <a href="youtube.html" target="frame"><img src="imagens/logo-youtube.jpg" alt="" style="margin-bottom: 0;"></a>
+    </div>
+</body>
+</html>
